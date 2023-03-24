@@ -34,7 +34,7 @@ while True:
 		normalised_img = test_img/255.0
 		# get predictions from the model
 		prediction = model.predict(normalised_img)
-		print(prediction)
+		print("rock :",prediction[0][0]," paper:",prediction[0][1]," scissor:",prediction[0][2])
 		
 		# displaying the frames captured
 		cv2.imshow('feed' , frame)
